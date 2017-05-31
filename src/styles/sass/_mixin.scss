@@ -1,0 +1,10 @@
+@mixin view-btn() {
+  text-decoration: none;
+  padding: 20px 35px;
+  @include border-radius(40px);
+  font: 18px 'MontB', sans-serif;
+}
+@mixin background($url,$size) {
+  background:$url 50% 50% no-repeat;
+  background-size:$size;
+}

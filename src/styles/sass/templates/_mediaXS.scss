@@ -1,0 +1,221 @@
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+  .main-header .logo {
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+  .telephone {
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+    top: 5%;
+    float: none;
+  }
+  .welcome-section {
+    &:after {
+      display: none;
+    }
+  }
+  .bt-menu-trigger span {
+    background: #ff343d;;
+  }
+  .bt-menu-trigger span:before, .bt-menu-trigger span:after {
+    background: #ff343d;;
+  }
+  .buy-btn {
+    color: #92a1a5;
+  }
+
+  .welcome-section .flex-wrap {
+    @include flex-direction(column);
+  }
+
+  .slider-wrap {
+    width: auto;
+  }
+  .slider .slider-item div {
+    text-align: center;
+    padding-left: 60px;
+  }
+
+  .slider {
+    width: 320px;
+  }
+  .slick-slide {
+    float: none;
+  }
+  .slider .slider-item {
+    width: 320px;
+  }
+  .slider .slider-item div {
+    padding-left: 40px;
+  }
+  .slider-item h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .slider-item p {
+    line-height: 20px;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .slick-dots {
+    top: 20%;
+  }
+  .scroll-wrap {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .scroll-wrap .scroll {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  @include keyframes(scroll) {
+    from {
+      top: 0;
+    }
+    to {
+      top: 10px;
+    }
+  }
+  .img-wrap {
+    padding-bottom: 20px;
+  }
+  .img-wrap:after {
+    display: none;
+  }
+
+  .fly-section {
+    @include flex-direction(column);
+  }
+
+  .fly-section .tap-to-fly {
+    width: 100%;
+    padding: 0;
+  }
+  .fly-section .fly-higher {
+    position: relative;
+    width: 100%;
+  }
+
+  .fly-section .fly-higher .hover-block-wrap .hover-block {
+    position: relative;
+    padding: 70px 20px;
+    width: 94%;
+  }
+  .hover-block p {
+    color: #fff;
+    padding: 30px 0;
+    font-size: 18px;
+  }
+  .fly-section .tap-to-fly:before {
+    display: none;
+    width: 100%;
+  }
+  .fly-section .fly-higher .hover-block-wrap:after {
+    display: none;
+  }
+
+  .rotate-view-btn {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .fly-section .tap-to-fly a {
+    display: block;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .tap-to-fly h3 {
+    font-size: 30px;
+  }
+  .vision-block {
+    padding: 20px;
+    background-size: cover;
+    height: 300px;
+  }
+  .vision-block p {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .vision-block .view-btn {
+    padding: 10px 25px;
+    font: 14px 'MontB', sans-serif;
+  }
+  .text-block p {
+    font-size: 30px;
+  }
+  @include keyframes (scale) {
+    from {
+      @include transform(scaleY(1));
+      @include opacity(1);
+    }
+    to {
+      @include transform(scaleY(1.2));
+      @include opacity(0.7);
+    }
+  }
+
+  .features-list {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+  .features-list li {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .features-list a:before {
+    margin: 0 auto 40px;
+  }
+
+  .features-header {
+    padding: 60px 0;
+  }
+  .features-list a {
+    color: #000;
+    display: block;
+    font: 22px 'MontR', sans-serif;
+  }
+
+  .flex-wrap {
+    flex-direction: column;
+  }
+  .flex-block {
+    width: 100%;
+  }
+  .hidden-block p {
+    font-size: 12px !important;
+  }
+
+  .controls-block {
+    padding: 100px;
+  }
+  .flying-generation-section {
+    padding: 20px 0;
+  }
+  .text-block .products-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .text-block {
+    padding: 0 10px;
+  }
+  .text-block > p {
+    padding-bottom: 20px;
+  }
+  .journey-section {
+    padding: 250px 0 140px;
+  }
+  .journey-section h3 {
+    font-size: 62px;
+    padding-bottom: 40px;
+  }
+}

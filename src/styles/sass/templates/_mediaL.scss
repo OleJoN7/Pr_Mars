@@ -1,0 +1,47 @@
+@media (min-width: 1200px) and (max-width: 1569px) {
+  .container {
+    width: 1170px;
+  }
+  .img-wrap {
+    width: 58vw;
+  }
+  .slider-wrap {
+    width: 400px;
+  }
+  .slick-dots {
+    left: -25px;
+  }
+  .slider .slider-item div {
+    padding-left: 5px;
+  }
+  .img-wrap:after {
+    padding: calc(420px / 2);
+  }
+  .tap-to-fly {
+    padding: 220px 80px 220px 100px;
+  }
+
+  .fly-section .tap-to-fly:before {
+    width: 145px;
+    top: 17%;
+  }
+  .tap-to-fly h3 {
+    font-size: 47px;
+  }
+  .hover-block p {
+    font-size: 47px;
+    padding: 220px 50px;
+  }
+  .vision-block > p {
+    font-size: 75px;
+    padding-bottom: 10px;
+  }
+  .text-block > p {
+    font-size: 75px;
+    padding-bottom: 15px;
+  }
+
+  .decrease {
+    font-size: 75px !important;
+  }
+}

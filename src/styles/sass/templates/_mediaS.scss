@@ -1,0 +1,120 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .welcome-section {
+    .flex-wrap {
+      position:absolute;
+      top:35%;
+    }
+  }
+  .img-wrap {
+    width: 43vw;
+  }
+  .img-wrap:after {
+    padding: calc(200px / 2);
+  }
+
+  .slider-wrap {
+    width: 320px;
+  }
+  .slider .slider-item div {
+    padding-left: 40px;
+  }
+  .slider-item h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .slider-item p {
+    line-height: 20px;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .scroll-wrap {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  @include keyframes(scroll) {
+    from {
+      top: 0;
+    }
+    to {
+      top: 40px;
+    }
+  }
+  .fly-section .tap-to-fly:before {
+    display: none;
+  }
+  .rotate-view-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    right: -1%
+  }
+
+  .tap-to-fly {
+    padding: 140px 30px 140px 70px;
+  }
+  .fly-section .tap-to-fly:before {
+    width: 130px;
+    top: 10%;
+  }
+  .tap-to-fly h3 {
+    font-size: 30px;
+  }
+  .hover-block p {
+    font-size: 30px;
+    padding: 140px 30px;
+  }
+  .vision-block {
+    padding: 0 50px;
+    height: 240px;
+  }
+  .vision-block > p {
+    font-size: 26px;
+    padding-bottom:10px;
+    padding-top:15px;
+  }
+  .vision-block .view-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .text-block {
+    padding: 0 50px;
+  }
+  .text-block > p {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .text-block .products-btn {
+    padding: 10px 20px;
+  }
+  @include keyframes (scale) {
+    from {
+      @include transform(scaleY(1));
+      @include opacity(1);
+    }
+    to {
+      @include transform(scaleY(1.2));
+      @include opacity(0.7);
+    }
+  }
+  .features-list a {
+    color: #000;
+    display: block;
+    font: 22px 'MontR', sans-serif;
+  }
+  .journey-section {
+    padding: 475px 0 140px;
+  }
+  .journey-section h3 {
+    font-size: 62px;
+    padding-bottom: 40px;
+  }
+  .decrease {
+    font-size: 30px;
+  }
+}
+
+.hidden-block {
+  font-size: 12px;
+}

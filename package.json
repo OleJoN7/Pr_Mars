@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^1.5.1",
+    "imagemin": "^5.3.1",
+    "jquery": "^3.1.1",
+    "jquery-migrate": "^3.0.0",
+    "run-sequence": "^1.2.2",
+    "slick-carousel": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

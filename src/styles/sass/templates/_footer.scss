@@ -1,0 +1,50 @@
+.main-footer {
+  overflow: hidden;
+  background: #fff;
+  .container {
+    padding: 225px 0 235px;
+    @include background(url('../../images/footer-bg.png'), (contain));
+  }
+  .logo {
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: -8px;
+      right: -10px;
+      border: #ff343d solid 3px;
+      @include border-radius(50%);
+    }
+    h1 {
+      font: 24px 'MontB', sans-serif;
+      color: $primary-color;
+      padding-bottom: 35px;
+    }
+    &:hover:before {
+      @include animation-name(pulse);
+      @include animation-duration(1.5s);
+      @include animation-iteration-count(infinite);
+    }
+    @include keyframes(pulse) {
+      50% {
+        @include box-shadow (0 0 0 4px #eff2f6, 0 0 2px 5px #ff343d);
+      }
+      100% {
+        @include box-shadow(0 0 2px 4px #eff2f6);
+      }
+    }
+  }
+  p {
+    font: 14px 'MontR', sans-serif;
+    color: $secondary-color;
+    a {
+      font: 14px 'MontR', sans-serif;
+      color: $secondary-color;
+    }
+  }
+
+}

@@ -1,0 +1,92 @@
+.main-header {
+  overflow: hidden;
+  padding: 65px 0 90px;
+  .logo {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 60px;
+    &:before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: -12px;
+      right: -15px;
+      border: #ff343d solid 3px;
+      @include border-radius(50%);
+    }
+    h1 {
+      font: 24px 'MontB', sans-serif;
+      color: $primary-color;
+    }
+    &:hover:before {
+      @include animation-name(pulse);
+      @include animation-duration(1.5s);
+      @include animation-iteration-count(infinite);
+    }
+    @include keyframes(pulse) {
+      50% {
+        @include box-shadow (0 0 0 4px #eff2f6, 0 0 2px 5px #ff343d);
+      }
+      100% {
+        @include box-shadow(0 0 2px 4px #eff2f6);
+      }
+    }
+  }
+}
+
+.telephone {
+  float: left;
+  padding-left: 20px;
+  line-height: 30px;
+  color: $secondary-color;
+  background: url('../../images/phone.png') 0 50% no-repeat;
+  @include transition(0.5s ease-in-out);
+  &:hover {
+    color: #ff343d;
+  }
+}
+
+//----------------MENU-------------------------
+.bt-menu {
+  z-index: 999;
+}
+
+.bt-menu-trigger {
+  z-index: 999;
+  right: 20px;
+  top: 50px;
+}
+
+.bt-menu ul:first-of-type {
+  right: 0;
+  top: 110px;
+}
+
+.bt-menu ul li a {
+  color: #fff;
+  font: 16px 'MontR', sans-serif;
+}
+
+.bt-menu ul li {
+  height: 50px;
+}
+
+//-------------MENU END-------------------------------
+
+.buy-btn {
+  position: absolute;
+  right: 55px;
+  z-index: 999;
+  font: 16px 'MontB', sans-serif;
+  color: #fff;
+  text-decoration: underline;
+  border: none;
+  background: transparent;
+  line-height: 30px;
+  margin-right: 35px;
+}
+
+

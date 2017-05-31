@@ -1,0 +1,77 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .img-wrap {
+    width: 53vw;
+  }
+  .img-wrap:after {
+    padding: calc(320px / 2);
+  }
+
+  .slider-wrap {
+    width: 360px;
+  }
+  .slider .slider-item div {
+    padding-left: 50px;
+  }
+  .slider-item h2 {
+    font-size: 48px;
+    padding-bottom: 20px;
+  }
+  .slider-item p {
+    line-height: 20px;
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  .tap-to-fly {
+    padding: 180px 60px 180px 80px;
+  }
+  .fly-section .tap-to-fly:before {
+    width: 130px;
+    top: 10%;
+  }
+  .tap-to-fly h3 {
+    font-size: 30px;
+  }
+  .hover-block p {
+    font-size: 30px;
+    padding: 180px 30px;
+  }
+  .vision-block > p {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  .text-block {
+    padding: 0 50px;
+  }
+  .text-block > p {
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  @include keyframes (scale) {
+    from {
+      @include transform(scaleY(1));
+      @include opacity(1);
+    }
+    to {
+      @include transform(scaleY(1.2));
+      @include opacity(0.7);
+    }
+  }
+  .features-list a {
+    color: #000;
+    display: block;
+    font: 25px 'MontR', sans-serif;
+  }
+  .journey-section {
+    padding: 575px 0 180px;
+    h3 {
+      padding-bottom: 30px;
+    }
+  }
+  .decrease {
+    font-size: 50px !important;
+  }
+}
